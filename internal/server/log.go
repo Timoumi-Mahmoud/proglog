@@ -5,7 +5,7 @@ import (
 	"sync"
 )
 
-var ErrOffsetNotFound = fmt.Errorf("offset not found")
+var ErrOffsetNotFound = fmt.Errorf("Offset not found")
 
 type Record struct {
 	Value  []byte `json:"value"`
