@@ -13,6 +13,8 @@ on:
 
           steps:
             - uses: actions/checkout@v2
+              with:
+                ssh-key: "${{ secrets.linux-machine-ssh }}"
 
             - name: Set up GO
               uses: actions/setup-go@v2
